@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Villa</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>My first "Game" <small>and API</small> </h1>
+        </header>
+        <div id="userWPic">
+            <div id="userCard">
+                <figure>
+                    <img id="userPic" src="data:image/png;base64,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" alt="">
+                </figure>
+                <div id="user">
+                    <p class="form" >Ingresa tu Nombre: </p>
+                    <input class="form" id="name" type="text" placeholder="Nombre">
+                    <p class="form" >y tu edad:</p>
+                    <input class="form" id="edad" type="text" placeholder="Edad">
+                    <button class="form" id="ourUser">Listo!</button>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <canvas width="500" height="500" id="villaPlatzi" ></canvas>
+        </div>
+        <div id="player">
+            <div id="usuarioExterno">
+
+        </div>
+    
+        </div>
+        <div id="footer">
+            <p>created by <strong> <a href="#"> Fred Di Pasqua</a> </strong></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="indexNext.js"></script> -->
+    <script src="usuarios.js"></script>
+    <!-- <script src="next2.js"></script> -->
+    <!-- <script src="expnext2.js"></script> -->
+    <script src="exp2next2.js"></script>
+</body>
+</html>

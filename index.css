@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://www.wallpaperup.com/uploads/wallpapers/2017/04/24/1087069/428f2be34beaf9519e507cc95cbbf9f6-700.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  object-fit: cover;
+  backdrop-filter: grayscale(30%);
+}
+
+.container {
+  display: grid;
+  grid-template: 50px 1fr 41px/30% 1fr 30%;
+  grid-template-areas: "header header header" "myGuest main random" "footer footer footer";
+}
+
+#header {
+  grid-area: header;
+  text-align: center;
+  background: linear-gradient(rgba(20, 24, 82, 0.9) 85%, rgba(20, 24, 82, 0.1));
+  color: white;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#header h1 {
+  margin: 0;
+}
+
+#userWPic {
+  grid-area: myGuest;
+  padding-left: 8%;
+}
+#userWPic #userCard {
+  width: 80%;
+  height: 439px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-radius: 30px;
+  background: rgba(250, 250, 250, 0.5);
+  text-align: center;
+}
+#userWPic #userCard figure {
+  margin: 0;
+}
+#userWPic #userCard figure #userPic {
+  border-radius: 150px;
+  width: 170px;
+}
+#userWPic #userCard .name {
+  margin-top: 0;
+}
+
+#main {
+  grid-area: main;
+  padding: 15px 0;
+}
+
+#player {
+  grid-area: random;
+}
+#player #usuarioExterno {
+  width: 80%;
+  height: 400px;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-radius: 30px;
+  background: rgba(250, 250, 250, 0.5);
+  text-align: center;
+}
+#player #usuarioExterno #usuarioRandom {
+  border-radius: 150px;
+}
+
+#footer {
+  grid-area: footer;
+  background: linear-gradient(0deg, rgba(20, 24, 82, 0.9) 75%, rgba(20, 24, 82, 0.2));
+  color: white;
+  text-align: end;
+}
+#footer p {
+  margin-right: 5%;
+  margin-top: 15px;
+  opacity: 80%;
+}
+#footer p strong a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
